@@ -13,7 +13,7 @@ $disk1VolumeParams = @{
     Confirm = $false
     Force = $true
 }
-
+Format-Volume @disk1VolumeParams
 # Disk 2: Format to NTFS with 64K allocation unit size, label: Logs
 $disk2Number = 2
 $disk2PartitionNumber = 1
@@ -29,7 +29,7 @@ $disk2VolumeParams = @{
     Confirm = $false
     Force = $true
 }
-
+Format-Volume @disk2VolumeParams
 # Disk 3: Format to NTFS with 64K allocation unit size, label: Index
 $disk3Number = 3
 $disk3PartitionNumber = 1
@@ -45,7 +45,7 @@ $disk3VolumeParams = @{
     Confirm = $false
     Force = $true
 }
-
+Format-Volume @disk3VolumeParams
 # Disk 4: Format to NTFS with 64K allocation unit size, label: TempDB
 $disk4Number = 4
 $disk4PartitionNumber = 1
@@ -61,3 +61,4 @@ $disk4VolumeParams = @{
     Confirm = $false
     Force = $true
 }
+Format-Volume @disk4VolumeParams
